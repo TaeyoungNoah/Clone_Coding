@@ -13,6 +13,8 @@ a {
     display: flex;
     flex-direction: column;
 }
+
+/*-------------------imageBox----------------*/
 .imageBox {
     background-image: url(https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80);
     background-size: cover;
@@ -36,10 +38,13 @@ a {
 }
 
 .imageBox__navbar__logo {
+    display: flex;
     font-size: 23px;
-    padding: 8px 12px;
     color: black;
-    font-weight: bold;
+    font-weight: 600;
+}
+.imageBox__navbar__logo a{
+    padding: 0 2px;
 }
 .imageBox__navbar__logo a{
     color: black;
@@ -52,6 +57,7 @@ a {
     padding: 0 0 0 25%;
 }
 .imageBox__navbar__menu li {
+    display: flex;
     padding: 8px 12px;
 }
 .imageBox__navbar__menu a {
@@ -103,7 +109,7 @@ a {
     align-items: center;
     width: 60%;
     height: 80px;
-    padding: 8px 2%;
+    padding: 8px 1% 8px 2%;
     background-color: rgba(224, 224, 224, 0.5);
     border-radius: 40px;
 }
@@ -119,6 +125,12 @@ a {
     width: 1px;
     height: 40px;
     background-color: black;
+}
+.imageBox__search__icon {
+    padding: 20px;
+    border-radius: 100%;
+    background-color: rgba(225, 102, 102, 1);
+    color: white;
 }
 .imageBox__search li{
     display: flex;
@@ -145,8 +157,85 @@ a {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 150px 0 0 0;
+    padding: 130px 0 0 0;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 400;
 }
 
+.btn__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imageBox__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 45px;
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.imageBox__btn a{
+    background: linear-gradient(to right top, #861657, #ffa69e);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+
+/*------------------exploreNearby-----------------*/
+.exploreNearby {
+    width: 100%;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 5% 0 5%;
+}
+
+.exploreNearby__title {
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+.exploreNearby__contents {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px 0;
+    list-style: none;
+}
+.exploreNearby__contents__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.exploreNearby__contents__content a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.exploreNearby__contents__icon {
+    padding: 15px 13px;
+    border-radius: 10px;
+    background-color: rgba( 224, 224, 224, 1);
+    color: rgba( 128, 128, 128, 1);;
+}
+.exploreNearby__contents__text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    justify-content: space-between;
+}
+.exploreNearby__city {
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+.exploreNearby__distance{
+    color: black;
+    font-size: 15px;
+}
